@@ -1,0 +1,225 @@
+/* Скидання базових стилів браузера */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Загальні стилі */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: white;
+    color: #000;
+}
+
+/* Шапка */
+header {
+    background-image: url('https://static.wixstatic.com/media/c837a6_02de7d4c43d44b7b890854049ed75da8f000.jpg/v1/fill/w_1521,h_840,al_c,q_85,usm_0.33_1.00_0.00,enc_avif,quality_auto/c837a6_02de7d4c43d44b7b890854049ed75da8f000.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
+    padding-top: 110px; /* відступ для фіксованого хедера */
+}
+
+/* Фіксована верхня панель */
+.poculana {
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.poculana h3 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Навігація */
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    font-size: 20px;
+    padding: 8px 12px;
+    border-radius: 100px;
+    background-color: rgb(220, 220, 220);
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-image: linear-gradient(to right,#F2F2F2,#BFBFBF,#8C8C8C,#595959,#0D0D0D);
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Головні заголовки */
+.shapka {
+    font-size: 64px;
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+}
+
+.neznay {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+/* Основний текстовий блок */
+.text {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 60px 40px;
+    gap: 20px;
+}
+
+.afto {
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 560px;
+}
+
+.poribnanna {
+    font-size: 18px;
+    max-width: 420px;
+    margin-bottom: 25px;
+}
+
+.kaptunka {
+    width: 100%;
+    max-width:900px;
+    object-fit: contain;
+}
+
+/* Послуги */
+.aftonom_drive {
+    padding: 60px 40px;
+    background-color: white;
+}
+
+.aftonom {
+    font-size: 18px;
+    letter-spacing: 2px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.aftonom_text {
+    font-size: 30px;
+    max-width: 600px;
+    font-weight: bold;
+}
+
+.meni_len {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 60px 40px;
+    gap: 40px;
+}
+
+.zagolovok {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.aftonom_drive_text {
+    font-size: 28px;
+    max-width: 450px;
+}
+
+.aftonom_drive_kaptunka {
+    max-width: 1000px;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Геолокація */
+.geo {
+    font-size: 40px;
+    margin-top: 40px;
+    margin-left: 30px;
+}
+
+.geo_text {
+    font-size: 28px;
+    max-width: 400px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+.geo_kaptunka{
+    max-width: 900px;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Сприйняття */
+.pobhe {
+    font-size: 40px;
+    margin: 60px 40px 20px;
+}
+
+.pobhe_text {
+    font-size: 28px;
+    max-width: 600px;
+    margin: 0 40px 30px;
+}
+
+.pobhe_kaptunka{
+    max-width: 900px;
+    width: 100%;
+    object-fit: contain;
+}
+
+/* Footer */
+footer {
+    background-color: white;
+    padding: 60px 40px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+.podval {
+    margin: 80px;
+    font-size: largest;
+}
+
+.info {
+    font-size: large;
+    margin-top: 40px;
+    margin-left: 0px;
+    text-align: center;
+}
+
+.mepegi img {
+    width: 40px;
+    transition: transform 0.3s ease;
+}
+
+.mepegi img:hover {
+    transform: scale(1.1);
+}
+
+.mepegi img {
+    margin: 10px;
+    transition: transform 0.2s;
+}
