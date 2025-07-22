@@ -1,0 +1,193 @@
+/* === СКИДАННЯ СТИЛІВ === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === ОСНОВНІ НАЛАШТУВАННЯ === */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+    color: #000;
+    line-height: 1.6;
+}
+
+/* === ХЕДЕР === */
+header {
+    background-image: url('https://static.wixstatic.com/media/84770f_7d06620bdcd24de29f5d55fef94e1aab~mv2.jpg/v1/fill/w_1351,h_1060,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/84770f_7d06620bdcd24de29f5d55fef94e1aab~mv2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
+    padding-top: 110px; /* простір під фіксовану панель */
+}
+
+/* === ФІКСОВАНА ВЕРХНЯ ПАНЕЛЬ === */
+.poculana {
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.poculana h3 {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* === НАВІГАЦІЯ === */
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    font-size: 20px;
+    padding: 8px 12px;
+    border-radius: 100px;
+    background-color: rgb(220, 220, 220);
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-image: linear-gradient(to right,#F2F2F2,#BFBFBF,#8C8C8C,#595959,#0D0D0D);
+    color: white;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* === ГОЛОВНІ ЗАГОЛОВКИ === */
+.shapka {
+    font-size: 64px;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+}
+
+.neznay {
+    font-size: 32px;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+/* === КОНТЕНТНИЙ БЛОК === */
+main {
+    padding: 80px 40px;
+    background-color: #f8f8f8;
+}
+
+main h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+main p {
+    font-size: 18px;
+    max-width: 800px;
+    margin-bottom: 30px;
+}
+
+/* === ФУТЕР === */
+footer {
+    background-color: #ffffff;
+    padding: 60px 30px;
+    text-align: center;
+    border-top: 1px solid #ccc;
+}
+
+.podval {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.info {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.mepegi {
+    text-decoration: none;
+    margin: 10px;
+}
+
+.mepegi img {
+    margin: 10px;
+    transition: transform 0.2s;
+}
+
+.mepegi img:hover {
+    transform: scale(1.1);
+}
+
+
+.info {
+    font-size: large;
+    margin-top: 40px;
+    margin-left: 0px;
+    text-align: center;
+}
+
+.mepegi img {
+    width: 40px;
+    transition: transform 0.3s ease;
+}
+/* === ДОДАТКОВІ СЕКЦІЇ === */
+.section-dark {
+    background-color: black;
+    color: white;
+    padding: 60px 40px;
+}
+
+.section-dark h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.section-dark p {
+    font-size: 18px;
+    max-width: 700px;
+}
+
+/* === АДАПТИВНІСТЬ === */
+@media screen and (max-width: 768px) {
+    .poculana {
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        align-items: flex-start;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .shapka {
+        font-size: 40px;
+    }
+
+    .neznay {
+        font-size: 22px;
+    }
+
+    main {
+        padding: 40px 20px;
+    }
+
+    .section-dark {
+        padding: 40px 20px;
+    }
+}
